@@ -1,12 +1,37 @@
-<!DOCTYPE html>
-html(lang="en")
-    head
-        meta(charset="UTF-8")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        meta(http-equiv="X-UA-Compatible", content="ie=edge")
-        title Document
-        link(rel="stylesheet", href="css/all.css")
-        script(src="js/all.js")
-    body
-    br 
+extend  layout.jade
+//- 把layout.jade作為我這一頁的延升
+//- include載入外部區塊(例如載入navbar,head...)
+//- block 作為其他頁面內容的顯示區域，會和extend一起用
+//- extend 會將其他頁面作為延升(像這一頁，寫在最上面)
+//- extend的內容會是從block後面開始的那一團，這一團不會出現，block下面註解就整個都註解了耶!註解要小心
+block navbar
+    include partials/navbar.jade
+//- layout那裡也只有寫block navber，應該是因為這裡有include出去了!
+block content
+    h1 #{menu.list[1].name}
+    h1
+        span Hello Jade!
+        | Hello yoyo!
+
+    br
+    | br only alone...
     p Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, reiciendis necessitatibus! Libero corrupti dolores minima atque, quod totam quis magnam quidem inventore quo quam, a, deleniti saepe mollitia vero id.
+    ul
+        li
+            a(href="#") link
+        li
+            a(href="#") link
+        li
+            a(href="#") link
+
+    .container
+        form(action="")
+            label(for="email") 請輸入email
+            input#email.form-control.input-sm(type="text")
+
+    h1: a(href="#"): span 我是連結打我哇!
+    h1
+        a(href="#")
+            span 我是連結跟上面一樣!!
+
+    

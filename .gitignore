@@ -3,5 +3,5 @@ bower_components
 public
 node_modules
 .bowerrc
-bower/
+bower
 package-lock.json
