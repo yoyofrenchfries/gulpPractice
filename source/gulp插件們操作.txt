@@ -1,0 +1,10 @@
+src裡面寫.jade在的地方，dest寫檔案要到的地方
+pipe(jade({
+這裡寫pretty:true的話邊藝出來的檔案就不會被壓縮!
+要把jade編譯成html的話就在終端機打gulp jade
+ gulp.src('./source/**/*.jade') 這樣的寫法會針對所有子資料夾做編譯
+gulp autoprefixer: 可以打不同瀏覽器的類別!last 00 versions =>可以到很舊的瀏覽器!
+加gulp-load-plugins之後只要在gulp前面加上$.就可以了
+gulp-concat合併不同檔案成同一個檔案
+gulp-plumber:防止gulp一出錯就停止
+gulp-load-plugins 只對gulp開頭的檔案有效

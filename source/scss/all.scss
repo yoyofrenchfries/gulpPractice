@@ -1,0 +1,10 @@
+$primary-color: pink;
+$secondary-color: red;
+
+p{
+    color: $primary-color;
+}
+.card{
+    transform: rotate(120deg);
+    // -webkit-transform: rotate(120deg)
+}
