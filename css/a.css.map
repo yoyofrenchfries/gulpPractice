@@ -1,0 +1,1 @@
+{"version":3,"sources":["a.scss"],"names":[],"mappings":"AACA;EACI,uBAFc,EAGjB","file":"a.css","sourcesContent":["$bunny-color: pink;\r\nbody{\r\n    background-color: $bunny-color\r\n}"]}

@@ -1,0 +1,1 @@
+{"version":3,"sources":["all.scss"],"names":[],"mappings":"AAGA;EACI,YAJgB,EAKnB;;AACD;EACI,kCAAyB;MAAzB,8BAAyB;UAAzB,0BAAyB,EAE5B","file":"all.css","sourcesContent":["$primary-color: pink;\r\n$secondary-color: red;\r\n\r\np{\r\n    color: $primary-color;\r\n}\r\n.card{\r\n    transform: rotate(120deg);\r\n    // -webkit-transform: rotate(120deg)\r\n}"]}
